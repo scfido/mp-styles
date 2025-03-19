@@ -1,0 +1,244 @@
+/**
+ * 按 Alt/Option + Shift + F 可格式化
+ * 如需使用主题色，请使用 var(--md-primary-color) 代替颜色值
+ * 如：color: var(--md-primary-color);
+ *
+ * 召集令：如果你有好看的主题样式，欢迎分享，让更多人能够使用到你的主题。
+ * 提交区：https://github.com/doocs/md/discussions/426
+ */
+/* 顶层容器样式 */
+container {
+  text-align: left;
+  line-height: 1.75;
+}
+/* 一级标题样式 */
+h1 {
+  display: table;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid var(--md-primary-color);
+  margin: 2em auto 1em;
+  color: hsl(var(--foreground));
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
+/* 二级标题样式 */
+h2 {
+  display: table;
+  padding: 0.3em 1.2em;
+  margin: 4em auto 2em;
+  color: #fff;
+  background: var(--md-primary-color);
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 24px 8px 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+/* 三级标题样式 */
+h3 {
+  padding-left: 12px;
+  font-size: 1.2em;
+  border-radius: 6px;
+  line-height: 2.4em;
+  border-left: 4px solid var(--md-primary-color);
+  border-right: 1px solid color-mix(in srgb, var(--md-primary-color) 10%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--md-primary-color) 10%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--md-primary-color) 10%, transparent);
+  background: color-mix(in srgb, var(--md-primary-color) 8%, transparent);
+  color: var(--md-primary-color);
+  margin: 2em 8px 0.75em 0;
+  font-weight: bold;
+}
+/* 四级标题样式 */
+h4 {
+  margin: 2em 8px 0.5em;
+  color: var(--md-primary-color);
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 6px;
+}
+/* 五级标题样式 */
+h5 {
+  margin: 1.5em 8px 0.5em;
+  color: var(--md-primary-color);
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 6px;
+}
+/* 六级标题样式 */
+h6 {
+  margin: 1.5em 8px 0.5em;
+  font-size: 1em;
+  color: var(--md-primary-color);
+  border-radius: 6px;
+}
+/* 图片样式 */
+image {
+  display: block;
+  width: 100% !important;
+  margin: 0.1em auto 0.5em;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+/* 引用样式 */
+blockquote {
+  font-style: italic;
+  padding: 1em 1em 1em 2em;
+  border-left: 4px solid var(--md-primary-color);
+  border-radius: 6px;
+  color: rgba(0,0,0,0.6);
+  background: var(--blockquote-background);
+  margin-bottom: 1em;
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.04);
+  border-top: 0.2px solid rgba(0, 0, 0, 0.04);
+  border-right: 0.2px solid rgba(0, 0, 0, 0.04);
+}
+/* 引用段落样式 */
+blockquote_p {
+  display: block;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  color: hsl(var(--foreground)/0.6);
+}
+/* GFM note 样式 */
+blockquote_note {
+  font-style: italic;
+}
+/* GFM tip 样式 */
+blockquote_tip {
+  font-style: italic;
+}
+/* GFM important 样式 */
+blockquote_important {
+  font-style: italic;
+}
+/* GFM warning 样式 */
+blockquote_warning {
+  font-style: italic;
+}
+/* GFM caution 样式 */
+blockquote_caution {
+  font-style: italic;
+}
+/* GFM 通用标题 */
+blockquote_title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+/* GFM note 标题 */
+blockquote_title_note {
+  color: #478be6;
+}
+/* GFM tip 标题 */
+blockquote_title_tip {
+  color: #57ab5a;
+}
+/* GFM important 标题 */
+blockquote_title_important {
+  color: #986ee2;
+}
+/* GFM warning 标题 */
+blockquote_title_warning {
+  color: #c69026;
+}
+/* GFM caution 标题 */
+blockquote_title_caution {
+  color: #e5534b;
+}
+/* GFM note 段落样式 */
+blockquote_p_note {
+  font-size: 0.8em;
+}
+/* GFM tip 段落样式 */
+blockquote_p_tip {
+  font-size: 0.8em;
+}
+/* GFM important 段落样式 */
+blockquote_p_important {
+  font-size: 0.8em;
+}
+/* GFM warning 段落样式 */
+blockquote_p_warning {
+  font-size: 0.8em;
+}
+/* GFM caution 段落样式 */
+blockquote_p_caution {
+  font-size: 0.8em;
+}
+/* 段落样式 */
+p {
+  margin: 1.5em 8px;
+  letter-spacing: 0.1em;
+  color: hsl(var(--foreground));
+  text-align: justify;
+}
+/* 分割线样式 */
+hr {
+  height: 1px;
+  border: none;
+  margin: 2em 0;
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+}
+/* 行内代码样式 */
+codespan {
+  font-size: 90%;
+  color: #d14;
+  background: rgba(27,31,35,.05);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+/* 粗体样式 */
+strong {
+  color: var(--md-primary-color);
+  font-weight: bold;
+  font-size: inherit;
+}
+/* 链接样式 */
+link {
+  color: #576b95;
+}
+/* 微信链接样式 */
+wx_link {
+  color: #576b95;
+  text-decoration: none;
+}
+/* 有序列表样式 */
+ol {
+  padding-left: 1.5em;
+  margin-left: 0;
+  color: hsl(var(--foreground));
+}
+/* 无序列表样式 */
+ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin-left: 0;
+  color: hsl(var(--foreground));
+}
+/* 列表项样式 */
+li {
+  text-indent: -1em;
+  display: block;
+  margin: 0.5em 8px;
+  color: hsl(var(--foreground));
+}
+/* 代码块样式 */
+code {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: 'Fira Code', Menlo, Operator Mono, Consolas, Monaco, monospace;
+}
+/* 代码块外层样式 */
+code_pre {
+  font-size: 14px;
+  overflow-x: auto;
+  border-radius: 8px;
+  padding: 1em;
+  line-height: 1.5;
+  margin: 10px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
