@@ -172,7 +172,9 @@ blockquote_p_caution {
 /* 段落样式 */
 p {
   margin: 1.5em 8px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.0em;
+  font-size: 17px;
+  line-height: 1.8em;
   color: hsl(var(--foreground));
   text-align: justify;
 }
